@@ -1,0 +1,23 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://php.fury.io/6PrnUc9PA889wRPJJ4X2/hopitio/"
+        }
+    ],
+    "require": {
+        "respect/validation": "^2.0",
+        "adodb/adodb-php": "*",
+        "slim/slim": "~2.0",
+        "elasticsearch/elasticsearch": "^6.0",
+        "hollodotme/fast-cgi-client": "3.1.*",
+        "maennchen/zipstream-php": "^2.1",
+        "guzzlehttp/guzzle": "^6.5",
+        "doctrine/cache": "^1.10",
+        "monolog/monolog": "^1.26",
+        "aws/aws-sdk-php": "^3.190",
+        "fluent/logger": "v1.0.0",
+        "ext-mcrypt": "^1.0",
+        "firebase/php-jwt": "^6.0"
+    }
+}

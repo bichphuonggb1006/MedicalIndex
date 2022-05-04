@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "0c070ee2-bd4d-4f08-a372-58d6b5d4072e",
+		"name": "serviceList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "insert",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"abc\",\n    \"code\": \"abc\",\n    \"dirID\": 1,\n    \"sort\": -1,\n    \"siteID\": \"master\",\n    \"price\": 1000000,\n    \"img\": \"zxc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/serviceList",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"serviceList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"price\": 500000,\n    \"sort\": 1,\n    \"siteID\": \"master\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/serviceList/4",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"serviceList",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOne",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/serviceList/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"serviceList",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMany",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/master/rest/teleclinic/serviceList",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"master",
+						"rest",
+						"teleclinic",
+						"serviceList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/serviceList/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"serviceList",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "123456",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

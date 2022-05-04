@@ -1,0 +1,91 @@
+{
+  "SpecificCharacterSet": null,
+  "AccessionNumber": null,
+  "ReferringPhysicianName": null,
+  "ReferencedStudySequence": [
+    {
+      "ReferencedSOPClassUID": null,
+      "ReferencedSOPInstanceUID": null
+    }
+  ],
+  "Modality": null,
+  "PatientBirthDate": null,
+  "PatientID": null,
+  "PatientName": null,
+  "PatientSex": null,
+  "PatientWeight": null,
+  "MedicalAlerts": null,
+  "ContrastAllergies": null,
+  "PregnancyStatus": null,
+  "StudyInstanceUID": null,
+  "RequestingPhysician": null,
+  "RequestedProcedureDescription": null,
+  "RequestedProcedureCodeSequence": [
+    {
+      "CodeValue": null,
+      "CodeSchemeDesignator": null,
+      "CodeMeaning": null
+    }
+  ],
+  "AdmissionID": null,
+  "SpecialNeeds": null,
+  "CurrentPatientLocation": null,
+  "PatientState": null,
+  "PerformedLocation": null,
+  "PerformedProcedureCodeSequence": null,
+  "PerformedProcedureStepDescription": null,
+  "PerformedProcedureStepEndDate": null,
+  "PerformedProcedureStepEndTime": null,
+  "PerformedProcedureStepID": null,
+  "PerformedProcedureStepStartDate": null,
+  "PerformedProcedureStepStartTime": null,
+  "PerformedProcedureStepStatus": null,
+  "PerformedProcedureTypeDescription": null,
+  "PerformedProtocolCodeSequence": null,
+  "PerformedSeriesSequence": null,
+  "PerformedStationAETitle": null,
+  "PerformedStationName": null,
+  "ReferencedPatientSequence": null,
+  "ScheduledStepAttributesSequence": [
+    {
+      "AccessionNumber": null,
+      "ReferencedStudySequence": null,
+      "RequestedProcedureDescription ": null,
+      "RequestedProcedureID": null,
+      "ScheduledProcedureProtocolCodeSequence": null,
+      "ScheduledProcedureStepDescription": null,
+      "ScheduledProcedureStepID": null,
+      "StudyInstanceUID": null
+    }
+  ],
+  "StudyID": null,
+  "ScheduledProcedureStepSequence": [
+    {
+      "Modality": null,
+      "RequestedContrastAgent": null,
+      "ScheduledStationAETitle": null,
+      "ScheduledProcedureStepStartDate": null,
+      "ScheduledProcedureStepStartTime": null,
+      "ScheduledPerformingPhysicianName": null,
+      "ScheduledProcedureStepDescription": null,
+      "ScheduledProtocolCodeSequence": [
+        {
+          "CodeValue": null,
+          "CodingSchemeDesignator": null,
+          "CodeMeaning": null
+        }
+      ],
+      "ScheduledProcedureStepID": null,
+      "ScheduledStationName": null,
+      "ScheduledProcedureStepLocation": null,
+      "PreMedication": null,
+      "ScheduledProcedureStepStatus": null
+    }
+  ],
+  "RequestedProcedureID": null,
+  "RequestedProcedurePriority": null,
+  "PatientTransportArrangements": null,
+  "ConfidentialityConstraintonPatientDataDescription": null,
+  "PatientFk": null,
+  "ItemAttrs": null
+}

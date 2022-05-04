@@ -1,0 +1,93 @@
+.nav-payment-menu {
+    background: #005AA9 !important;
+    color: #FFF;
+    box-shadow: 0 5px 7px 0 rgb(0 0 0 / 16%);
+}
+
+.nav-payment-menu .call-support-phone a {
+    color: #FFF;
+}
+
+.payment-home {
+    padding: 0 !important;
+}
+
+.payment-home .jumbotron-banner {
+    background-image: url('../images/banner.png');
+}
+
+.payment-home .jumbotron-banner > h3 {
+    text-align: center;
+    color: #005AA9;
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: 2rem;
+}
+
+.payment-container .card .card-header {
+    background: #005AA9;
+}
+
+.payment-container .card .card-header.text-white h4 {
+    color: #FFF;
+}
+
+
+.lbl-vnp-name {
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.lbl-vnp-value {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.payment-footer button {
+    width: 273px;
+    font-size: 20px;
+    padding: 10px 30px;
+}
+
+.payment-footer button.btn-default:hover {
+    background: #FFF;
+    box-shadow: none;
+    color: #262626;
+}
+
+.payment-footer button.btn-primary {
+    background-color: #005AA9;
+    border-color: #005AA9;
+}
+
+.payment-container .card-body {
+    border: 1px solid #ccc5c580;
+    box-shadow: 0 5px 7px 0 rgb(0 0 0 / 14%);
+}
+
+.payment-footer {
+    margin-top: 30px;
+}
+
+.lbl-vnp-value.result-success {
+
+}
+
+.lbl-vnp-value.result-error {
+    color: red;
+}
+
+.margin-none {
+    margin: 0 !important;
+}
+
+.payment-container td.actions a {
+    margin-bottom: 0;
+}
+
+.payment-container td.actions .btn.btn-default:hover,
+.payment-container td.actions .btn.btn-default:focus{
+    background-color: #FFF;
+    box-shadow: none;
+}
+

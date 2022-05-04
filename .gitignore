@@ -1,0 +1,8 @@
+!Module/company/cache
+composer.lock
+install.lock
+/nbproject/private/
+.idea
+.DS_Store
+/.vscode
+/Config/Enviroments/development.config.php

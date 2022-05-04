@@ -1,0 +1,30 @@
+[
+    {
+        "name": "telerivet/telerivet-php-client",
+        "version": "v1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Telerivet/telerivet-php-client.git",
+            "reference": "f79c39b45cdd4ea21bb0ae64c21bb9c4bdca69fb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Telerivet/telerivet-php-client/zipball/f79c39b45cdd4ea21bb0ae64c21bb9c4bdca69fb",
+            "reference": "f79c39b45cdd4ea21bb0ae64c21bb9c4bdca69fb",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2014-07-10T23:06:03+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "PHP client library for Telerivet REST API",
+        "homepage": "https://telerivet.com/api"
+    }
+]

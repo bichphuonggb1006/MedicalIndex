@@ -1,0 +1,15 @@
+{
+  "name": "teleclinic/teleclinic",
+  "description": "Tele clinic app",
+  "version": "1.0.0",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Duong Tuan Anh",
+      "email": "anhdt.hn.vn@gmail.com"
+    }
+  ],
+  "require": {
+    "telerivet/telerivet-php-client": "^1.1"
+  }
+}

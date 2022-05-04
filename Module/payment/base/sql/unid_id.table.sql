@@ -1,0 +1,1 @@
+CREATE TABLE if not exists  uniq_id(`seq` VARCHAR(50) PRIMARY KEY NOT NULL, id BIGINT DEFAULT 1, `comment` TEXT) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

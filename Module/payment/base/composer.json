@@ -1,0 +1,12 @@
+{
+  "name": "payment/base",
+  "description": "Module Payment Base",
+  "version": "1.0.0",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Tran Dang Tham",
+      "email": "thamtd.hn.vn@gmail.com"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+    "serviceDir.header": "Nhóm dịch vụ",
+    "serviceDir.id": "ID",
+    "serviceDir.name": "Tên",
+    "serviceDir.parentID": "Thư mục cha",
+    "serviceDir.sort": "Sắp xếp",
+    "serviceDir.actions": "Thao tác",
+    "serviceDirEdit.header": "Cập nhật nhóm dịch vụ",
+    "serviceList.header": "Dịch vụ",
+    "serviceList.id": "ID",
+    "serviceList.name": "Tên",
+    "serviceList.code": "Mã dịch vụ",
+    "serviceList.dirID": "Nhóm dịch vụ",
+    "serviceList.sort": "Sắp xếp",
+    "serviceList.price": "Giá",
+    "serviceListEdit.header": "Cập nhật dịch vụ",
+    "teleclinic.btnSave": "Ghi lại",
+    "teleclinic.btnClose": "Hủy bỏ",
+    "teleclinic.btnNew": "Thêm mới",
+    "teleclinic.placeSearch": "Tên dịch vụ",
+    "update.error": "Lỗi cập nhật",
+
+    "mergeSite.notifi.success": "Ghép tài khoản thành công!"
+}

@@ -1,0 +1,24 @@
+{
+	"id": "f59fd679-7fc7-4795-a0b1-02a30b3c8b54",
+	"name": "envi_test_frame",
+	"values": [
+		{
+			"key": "baseURL",
+			"value": "http://localhost/pacs",
+			"enabled": true
+		},
+		{
+			"key": "adminAcc",
+			"value": "admin",
+			"enabled": true
+		},
+		{
+			"key": "adminPass",
+			"value": "123456",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2020-10-14T08:08:35.713Z",
+	"_postman_exported_using": "Postman/7.34.0"
+}

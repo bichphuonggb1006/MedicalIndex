@@ -1,0 +1,17 @@
+{
+  "name": "teleclinic/api",
+  "description": "Tele clinic app",
+  "version": "1.0.0",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Pham Van Huong",
+      "email": "phamvanhuong.hd@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "7.1.33",
+    "telerivet/telerivet-php-client": "^1.1",
+    "zircote/swagger-php": "^3.0"
+  }
+}

@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteBase /clinic
+
+RedirectMatch ^/$ /clinic/auth/login
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.+)$ index.php [QSA,L]
+
+allow from all
+
+#CGIPassAuth on

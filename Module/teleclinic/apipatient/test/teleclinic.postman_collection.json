@@ -1,0 +1,649 @@
+{
+	"info": {
+		"_postman_id": "98af43ac-c290-4bd2-be73-6ea442ac7239",
+		"name": "teleclinic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add dir",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Test status\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.status).to.eql(true);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tiêu hóa\",\r\n    \"parentID\": 0,\r\n    \"siteID\": \"master\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/serviceDir",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"serviceDir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get dirs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/master/rest/teleclinic/serviceDir",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"master",
+						"rest",
+						"teleclinic",
+						"serviceDir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Dir",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Delete dir",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "add clinic",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"PK 1\",\r\n    \"siteID\": \"master\",\r\n    \"depID\": \"a738bb35.33666101.0c350a33.b9532837.50\",\r\n    \"patientPerHour\": 2,\r\n    \"videoCall\": {\"type\": \"zoom\",\"room\": \"2088421796\", \"hostURL\": \"https://zoom.us/s/2088421796?zak=eyJ0eXAiOiJKV1QiLCJzdiI6IjAwMDAwMSIsInptX3NrbSI6InptX28ybSIsImFsZyI6IkhTMjU2In0.eyJhdWQiOiJjbGllbnRzbSIsInVpZCI6IjhhOGUySmpWVGR5Wk9tWU9faWRVUWciLCJpc3MiOiJ3ZWIiLCJzdHkiOjEwMCwid2NkIjoiYXcxIiwiY2x0IjowLCJzdGsiOiJHa1p0LUtYSlN2WTRkVENNanRpblR5NmZTTC1reUIwdUJKWnNJOHE4cHZZLkJnWWdSWGszTkZWQlNWbzFhMGhESzB0NVVGRm5SbWx3YnpNNFRFNVdWSGxZWjJsQU56VmlZemt3TnpWak1tSXpOMk5rTVRBM05tVXlOalZtTldGak0yTmxOMlZqTW1NMVl6Wm1ZamsyWVRZelpEQTFZakJrWldVMVpUbGpNR0U1TURWbE9BQU1NME5DUVhWdmFWbFRNM005QUFOaGR6RUFBQUY3Q2dfUUpBQVNkUUFBQUEiLCJleHAiOjE2Mjc5Njg2MTMsImlhdCI6MTYyNzk2MTQxMywiYWlkIjoibTVMeWVGclVTaDJnZ0tqRjloM0FoZyIsImNpZCI6IiJ9.q9jLS9DDKdGN3T638Y7-vgc6RmF88qkheyAhmCSU3so\"\r\n    },\r\n    \"schedule\": {\r\n        \"0\": [7, 16],\r\n        \"1\": [13, 16]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/vclinic?debug=1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"vclinic"
+					],
+					"query": [
+						{
+							"key": "debug",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get clinics",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/vclinic?siteID=master&depID=906238ea.12cc60fb.c1a42818.d7735641.36",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"vclinic"
+					],
+					"query": [
+						{
+							"key": "siteID",
+							"value": "master"
+						},
+						{
+							"key": "depID",
+							"value": "906238ea.12cc60fb.c1a42818.d7735641.36"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get clinics group by",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/vclinic?siteID=master&depID=906238ea.12cc60fb.c1a42818.d7735641.36&groupBy=depID",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"vclinic"
+					],
+					"query": [
+						{
+							"key": "siteID",
+							"value": "master"
+						},
+						{
+							"key": "depID",
+							"value": "906238ea.12cc60fb.c1a42818.d7735641.36"
+						},
+						{
+							"key": "groupBy",
+							"value": "depID"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get clinic",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/vclinic/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"vclinic",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete clinic",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/vclinic/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"vclinic",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patient\": {\r\n        \"id\": \"pid1\",\r\n        \"name\": \"test patient\",\r\n        \"age\": 80,\r\n        \"phone\": \"0961899560\",\r\n        \"addressText\": \"linh nam\",\r\n        \"addressDetails\": [\r\n            {\"id\": \"01\", \"name\": \"Ha Noi\", \"level\": \"TINH\"},\r\n            {\"id\": \"001\", \"name\": \"Ba Dinh\", \"level\": \"Huyen\"},\r\n            {\"id\": \"00001\", \"name\": \"Phuc Xa\", \"level\": \"XA\"}\r\n        ]\r\n    },\r\n    \"reqDate\": \"2021-08-01\",\r\n    \"reqTimes\": [7, 8],\r\n    \"reqNote\": \"dau bung\",\r\n    \"reqServiceID\": 1,\r\n    \"paymentStatus\": \"unpaid\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/schedule/request?debug=1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"schedule",
+						"request"
+					],
+					"query": [
+						{
+							"key": "debug",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get schedules",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/schedule?siteID=master&clinicID=3&debug=1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"schedule"
+					],
+					"query": [
+						{
+							"key": "siteID",
+							"value": "master"
+						},
+						{
+							"key": "clinicID",
+							"value": "3"
+						},
+						{
+							"key": "debug",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get schedule",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/schedule/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"schedule",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "schedule",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"scheduledDate\": \"2021-09-30 09:30\",\r\n    \"vclinicID\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/schedule/2/schedule",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"schedule",
+						"2",
+						"schedule"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "diagnosis",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"diagDesc\": \"diagnosis description\",\r\n    \"diagConclusion\": \"diagConclusion\",\r\n    \"diagRecommendation\": \"diagRecommendation\",\r\n    \"diagPrescription\": \"<table></table>\",\r\n    \"reExamDate\": \"2020-12-01\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/schedule/1/diagnosis",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"schedule",
+						"1",
+						"diagnosis"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cancel schedule",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"comment\": \"cancel reason\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/schedule/1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"schedule",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get root dvhc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/rest/dvhc",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"dvhc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get child dvhc",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/rest/dvhc?parentID=01",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"dvhc"
+					],
+					"query": [
+						{
+							"key": "parentID",
+							"value": "01"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api tong hop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/schedule/getClinicScheduleSummaries?clinicID=3&scheduledDate=2021-8-3",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"schedule",
+						"getClinicScheduleSummaries"
+					],
+					"query": [
+						{
+							"key": "clinicID",
+							"value": "3"
+						},
+						{
+							"key": "scheduledDate",
+							"value": "2021-8-3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update clinic schedule",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"date\": \"2021-09-01\",\r\n    \"schedule\": {\r\n        \"7\": true,\r\n        \"8\": true,\r\n        \"9\": true,\r\n        \"10\": true\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/vclinic/1/schedule?debug=1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"vclinic",
+						"1",
+						"schedule"
+					],
+					"query": [
+						{
+							"key": "debug",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get clinic schedule",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/vclinic/schedule?date=2021-09-01&siteID=master&debug=1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"vclinic",
+						"schedule"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2021-09-01"
+						},
+						{
+							"key": "siteID",
+							"value": "master"
+						},
+						{
+							"key": "debug",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check time available",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/rest/teleclinic/serviceList/2/checkTime?date=2021-09-01&debug=1",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"rest",
+						"teleclinic",
+						"serviceList",
+						"2",
+						"checkTime"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2021-09-01"
+						},
+						{
+							"key": "debug",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{adminPass}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{adminAcc}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

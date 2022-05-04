@@ -1,0 +1,12 @@
+{
+  "name": "payment/vnpay",
+  "description": "Module Payment VNPAY",
+  "version": "1.0.0",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Tran Dang Tham",
+      "email": "thamtd.hn.vn@gmail.com"
+    }
+  ]
+}

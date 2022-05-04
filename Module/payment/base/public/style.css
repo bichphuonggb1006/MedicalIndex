@@ -1,0 +1,62 @@
+/* css modal */
+.modal-dialog {
+    border-radius: 5px;
+}
+
+.modal-content {
+    box-shadow: 0 8px 18px rgb(0 0 0 / 18%), 0 6px 6px rgb(0 0 0 / 23%);
+    border-radius: 2px;
+    border: 0;
+}
+
+.modal .modal-header {
+    border-bottom: 1px solid #efefef;
+}
+
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(.3rem - 1px);
+    border-top-right-radius: calc(.3rem - 1px);
+}
+
+.modal-footer {
+    border-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .75rem !important;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+.modal-body .form-group .control-label {
+    text-align: right;
+    font-size: 15px;
+}
+
+.component-UserEdit.modal {
+    z-index: 10000 !important;
+    outline: 0;
+    overflow-y: auto !important;
+}
+.component-DepEdit.modal {
+    z-index: 10000 !important;
+    outline: 0;
+    overflow-y: auto !important;
+}
+.modal{
+    z-index: 9999;
+}

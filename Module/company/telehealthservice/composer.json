@@ -1,0 +1,12 @@
+{
+    "name": "company/telehealthservice",
+    "description": "Quan ly can bo nhan vien",
+    "version": "1.0.0",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Bui Xuan Thang",
+            "email": "buixuanthang.2706@gmail.com"
+        }
+    ]
+}
